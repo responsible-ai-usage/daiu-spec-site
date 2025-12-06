@@ -10,8 +10,8 @@ const darkCodeTheme = prismReactRenderer.themes.dracula;
 const config = {
   title: 'DAIU Specification',
   tagline: 'Be Transparent About AI Use',
-  url: 'https://daiu.org',
-  baseUrl: '/spec/',
+  url: 'https://responsible-ai-usage.github.io',
+  baseUrl: '/daiu-spec-site/',
   favicon: 'favicon.ico',
   organizationName: 'responsible-ai-usage-foundation',
   projectName: 'daiu-spec-site',
