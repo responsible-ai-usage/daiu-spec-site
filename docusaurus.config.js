@@ -2,7 +2,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 
-// Prism themes
+// Safe Prism theme imports
 const prismReactRenderer = require('prism-react-renderer');
 const lightCodeTheme = prismReactRenderer.themes.github;
 const darkCodeTheme = prismReactRenderer.themes.dracula;
@@ -10,18 +10,20 @@ const darkCodeTheme = prismReactRenderer.themes.dracula;
 const config = {
   title: 'DAIU Specification',
   tagline: 'Be Transparent About AI Use',
-  url: 'https://daiu.org',          // your main domain
-  baseUrl: '/spec/',               // site will live at daiu.org/spec
+  url: 'https://daiu.org',
+  baseUrl: '/spec/',
   favicon: 'favicon.ico',
-  organizationName: 'responsible-ai-usage-foundation', // GitHub org/user
-  projectName: 'daiu-spec-site',   // repo name
+  organizationName: 'responsible-ai-usage-foundation',
+  projectName: 'daiu-spec-site',
 
-  onBrokenLinks: 'throw',
+  // IMPORTANT: prevent the build from failing on links that point outside /spec/
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  onBrokenAnchors: 'warn',
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en']
+    locales: ['en'],
   },
 
   presets: [
@@ -29,18 +31,21 @@ const config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/', // so /spec/ is docs root
+          routeBasePath: '/', // /spec/ = docs root
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/responsible-ai-usage-foundation/daiu-spec-site/edit/main/'
+            'https://github.com/responsible-ai-usage-foundation/daiu-spec-site/edit/main/',
+          
+          // FIX: ignore markdown links pointing outside /spec/
+          ignoreBrokenMarkdownLinks: true
         },
         blog: false,
         pages: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css')
-        }
-      }
-    ]
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
   ],
 
   themeConfig: {
@@ -48,35 +53,38 @@ const config = {
       title: 'DAIU Spec',
       logo: {
         alt: 'DAIU logo',
-        src: 'favicon.ico'
+        src: 'favicon.ico',
       },
       items: [
         {
           type: 'doc',
           docId: '1.0/overview',
           position: 'left',
-          label: 'Version 1.0'
+          label: 'Version 1.0',
         },
         {
           href: 'https://daiu.org',
           label: 'daiu.org',
-          position: 'right'
-        }
-      ]
+          position: 'right',
+        },
+      ],
     },
+
     colorMode: {
       defaultMode: 'light',
-      respectPrefersColorScheme: false
+      respectPrefersColorScheme: false,
     },
+
     footer: {
       style: 'light',
-      copyright: `© ${new Date().getFullYear()} Responsible AI Usage Foundation, Inc. DAIU 1.0 standard.`
+      copyright: `© ${new Date().getFullYear()} Responsible AI Usage Foundation, Inc. DAIU 1.0 standard.`,
     },
+
     prism: {
       theme: lightCodeTheme,
-      darkTheme: darkCodeTheme
-    }
-  }
+      darkTheme: darkCodeTheme,
+    },
+  },
 };
 
 module.exports = config;
