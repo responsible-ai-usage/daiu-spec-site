@@ -30,16 +30,26 @@ main {
   color: #ffffff;
   background-color: #3d7a4e;
 }
-/* Sidebar category header: "DAIU 1.0" */
-.theme-doc-sidebar-item-category .menu__link {
-  background-color: #141414;
-  color: #fbfaf3;
+
+/* Top-level sidebar category header: "DAIU 1.0" */
+.theme-doc-sidebar-item-category-level-1
+  > .menu__list-item-collapsible
+  > .menu__link.menu__link--sublist {
+  background-color: #141414 !important;
+  color: #fbfaf3 !important;
   font-weight: 600;
+  border-radius: 4px;
 }
 
-.theme-doc-sidebar-item-category .menu__link:hover {
-  background-color: #010101;
-  color: #fbfaf3;
+/* Hover + active state for that header only */
+.theme-doc-sidebar-item-category-level-1
+  > .menu__list-item-collapsible
+  > .menu__link.menu__link--sublist:hover,
+.theme-doc-sidebar-item-category-level-1
+  > .menu__list-item-collapsible
+  > .menu__link.menu__link--sublist.menu__link--active {
+  background-color: #010101 !important;
+  color: #fbfaf3 !important;
 }
 
 /* DAIU badges */
@@ -68,17 +78,25 @@ main {
   border-color: #c1dee9;
 }
 
-/* Footer styling */
-.footer--light {
+/* Footer styling – apply to all footers */
+.footer {
   background-color: #141414;
   color: #fbfaf3;
 }
 
-.footer--light a {
+/* Copyright text */
+.footer__copyright {
+  color: #fbfaf3;
+}
+
+/* Link inside copyright line */
+.footer__copyright a {
   color: #fbfaf3;
   text-decoration: underline;
 }
 
-.footer__copyright {
-  color: #fbfaf3;
+/* Optional: slight hover tweak */
+.footer__copyright a:hover {
+  opacity: 0.85;
 }
+
