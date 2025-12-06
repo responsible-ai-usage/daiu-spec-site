@@ -79,7 +79,7 @@ const config = {
 
     footer: {
       style: 'light',
-      copyright: `© ${new Date().getFullYear()} Responsible AI Usage Foundation, Inc.`
+      copyright: `© ${new Date().getFullYear()} Disclose AI Usage - <a href="https://responsibleaiusage.org" target="_blank" rel="noopener noreferrer">Responsible AI Usage Foundation, Inc.</a>`
     },
 
     prism: {
