@@ -1,0 +1,58 @@
+:root {
+  --ifm-color-primary: #3d7a4e;
+  --ifm-color-primary-dark: #326443;
+  --ifm-color-primary-light: #4c9460;
+
+  --ifm-font-family-base: "Noto Serif", "Times New Roman", serif;
+  --ifm-heading-font-family: "Vollkorn", "Times New Roman", serif;
+
+  --daiu-bg: #fbfaf3;
+  --daiu-text: #141414;
+}
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&family=Vollkorn:wght@500;600;700&display=swap');
+
+html,
+body {
+  background-color: var(--daiu-bg);
+  color: var(--daiu-text);
+}
+
+/* Main content background */
+main {
+  background-color: var(--daiu-bg);
+}
+
+/* Sidebar active item */
+.theme-doc-sidebar-menu .menu__link--active,
+.theme-doc-sidebar-menu .menu__link--active:hover {
+  color: #ffffff;
+  background-color: #3d7a4e;
+}
+
+/* DAIU badges */
+
+.daiu-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid #c2dfc7;
+  background-color: #e2f3e7;
+  font-size: 0.75rem;
+  font-weight: 600;
+  gap: 6px;
+}
+
+.daiu-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background-color: #3d7a4e;
+}
+
+.daiu-badge--ai {
+  background-color: #e3f4f8;
+  border-color: #c1dee9;
+}
