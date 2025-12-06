@@ -1,6 +1,7 @@
 ---
 id: overview
 title: DAIU 1.0 overview
+slug: /
 ---
 
 DAIU (Declare AI Usage) is an open, voluntary framework for describing how AI contributed to a specific piece of content.

@@ -10,13 +10,17 @@ const darkCodeTheme = prismReactRenderer.themes.dracula;
 const config = {
   title: 'DAIU Specification',
   tagline: 'Be Transparent About AI Use',
+
+  // For now we’re hosting on GitHub Pages at:
+  // https://responsible-ai-usage.github.io/daiu-spec-site/
   url: 'https://responsible-ai-usage.github.io',
   baseUrl: '/daiu-spec-site/',
-  favicon: 'favicon.ico',
-  organizationName: 'responsible-ai-usage-foundation',
-  projectName: 'daiu-spec-site',
 
-  // IMPORTANT: avoid build failures on any broken links
+  favicon: 'favicon.ico',
+  organizationName: 'responsible-ai-usage',      // GitHub org/user
+  projectName: 'daiu-spec-site',                // Repo name
+
+  // Don’t fail the build on broken links – just warn
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
@@ -30,11 +34,10 @@ const config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/',  // /spec/ = root
+          routeBasePath: '/',  // /daiu-spec-site/ is docs root
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/responsible-ai-usage-foundation/daiu-spec-site/edit/main/'
-          // ❗ Do NOT add ignoreBrokenMarkdownLinks here — Docusaurus v3 rejects it
+            'https://github.com/responsible-ai-usage/daiu-spec-site/edit/main/'
         },
         blog: false,
         pages: false,
@@ -50,7 +53,8 @@ const config = {
       title: 'DAIU Spec',
       logo: {
         alt: 'DAIU logo',
-        src: 'favicon.ico'
+        // Place your logo at static/img/daiu-logo.png
+        src: 'img/daiu-logo.png'
       },
       items: [
         {
@@ -69,6 +73,7 @@ const config = {
 
     colorMode: {
       defaultMode: 'light',
+      disableSwitch: true,          // no dark-mode toggle
       respectPrefersColorScheme: false
     },
 
