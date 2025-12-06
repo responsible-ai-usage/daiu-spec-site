@@ -1,14 +1,20 @@
 // docusaurus.config.js
 
 /** @type {import('@docusaurus/types').Config} */
+
+// Prism themes
+const prismReactRenderer = require('prism-react-renderer');
+const lightCodeTheme = prismReactRenderer.themes.github;
+const darkCodeTheme = prismReactRenderer.themes.dracula;
+
 const config = {
   title: 'DAIU Specification',
   tagline: 'Be Transparent About AI Use',
-  url: 'https://daiu.org',
-  baseUrl: '/spec/',
+  url: 'https://daiu.org',          // your main domain
+  baseUrl: '/spec/',               // site will live at daiu.org/spec
   favicon: 'favicon.ico',
-  organizationName: 'responsible-ai-usage-foundation',
-  projectName: 'daiu-spec-site',
+  organizationName: 'responsible-ai-usage-foundation', // GitHub org/user
+  projectName: 'daiu-spec-site',   // repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -23,7 +29,7 @@ const config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/', // so /spec/ is docs root
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/responsible-ai-usage-foundation/daiu-spec-site/edit/main/'
@@ -67,8 +73,8 @@ const config = {
       copyright: `© ${new Date().getFullYear()} Responsible AI Usage Foundation, Inc. DAIU 1.0 standard.`
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula')
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme
     }
   }
 };
