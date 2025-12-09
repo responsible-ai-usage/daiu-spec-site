@@ -50,7 +50,7 @@ const config = {
 
   themeConfig: {
     navbar: {
-      title: 'DAIU Spec',
+      title: 'Specification',
       logo: {
         alt: 'DAIU logo',
         // Place your logo at static/img/daiu-logo.png
@@ -61,7 +61,7 @@ const config = {
           type: 'doc',
           docId: '1.0/overview',
           position: 'left',
-          label: 'Version 1.0'
+          label: 'V 1.0 (draft)'
         },
         {
           href: 'https://daiu.org',
