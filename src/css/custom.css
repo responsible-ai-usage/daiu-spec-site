@@ -100,3 +100,19 @@ main {
   opacity: 0.85;
 }
 
+/* Force code block backgrounds to white */
+.theme-code-block,
+.theme-code-block pre,
+pre.prism-code,
+div[class*="codeBlockContent"],
+code[class*="codeBlockLines"] {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0;
+}
+
+/* Also override the border radius (optional) */
+.theme-code-block,
+.theme-code-block pre {
+  border-radius: 6px;
+}
+
