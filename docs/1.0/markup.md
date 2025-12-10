@@ -3,9 +3,9 @@ id: markup
 title: Markup and data formats
 ---
 
-DAIU can be represented in both human facing text and machine readable data.
+DAIU can be represented in both human-facing text and machine-readable data.
 
-## Human facing tag
+## Plain text tag
 
 The recommended format is:
 
@@ -14,6 +14,41 @@ Origin: HM · Assist — DAIU 1.0
 ```
 
 This can appear in captions, bylines, assignment cover pages and credits.
+
+## Rich text with icons
+
+For platforms that support HTML or styled content, DAIU tags may be displayed with a
+small badge icon next to the tag text, similar to how Creative Commons licenses are
+shown.
+
+**Preview (HM · Assist — DAIU 1.0)**
+
+<div class="daiu-badge-preview">
+  <a href="https://daiu.org/1.0/hm-assist" style="text-decoration:none; color:inherit;">
+    <img
+      src="/daiu-spec-site/static/img/badges/daiu-hm-assist.svg"
+      alt="DAIU badge — HM · Assist"
+      style="height:32px; vertical-align:middle; margin-right:0.5rem;"
+    />
+    <span>Origin: HM · Assist — DAIU 1.0</span>
+  </a>
+</div>
+
+**Copy-paste HTML**
+
+```html
+<a href="https://daiu.org/1.0/hm-assist" style="text-decoration:none; color:inherit;">
+  <img
+    src="https://responsible-ai-usage.github.io/daiu-spec-site/static/img/badges/daiu-hm-assist.svg"
+    alt="DAIU badge — HM · Assist"
+    style="height:32px; vertical-align:middle; margin-right:0.5rem;"
+  />
+  <span>Origin: HM · Assist — DAIU 1.0</span>
+</a>
+```
+
+Implementers may host the SVG locally or via their own CDN as long as the icon and
+tag text remain unchanged.
 
 ## HTML meta tags
 
@@ -39,4 +74,5 @@ For web content, DAIU values can be expressed as meta tags:
 }
 ```
 
-Implementations may adapt these structures as needed for their systems. The key requirement is to preserve the origin, level and version values.
+Implementations may adapt these structures as needed for their systems. The key
+requirement is to preserve the origin, level and version values.
