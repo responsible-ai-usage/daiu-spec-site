@@ -27,6 +27,6 @@ DAIU is maintained by the Responsible AI Usage Foundation, Inc., a nonprofit ded
 
 A typical human facing disclosure looks like:
 
-<span class="daiu-badge"><span class="daiu-badge-dot"></span>HM · Assist — DAIU 1.0</span>
+<span class="daiu-badge"><span class="daiu-badge-dot"></span>HM · Assist - DAIU 1.0</span>
 
 This specification is the authoritative description of DAIU 1.0.

@@ -23,7 +23,7 @@ DAIU 1.0 combines two dimensions:
 Human origin with no AI involvement.
 
 ```text
-Origin: HM · None — DAIU 1.0
+Origin: HM · None - DAIU 1.0
 ```
 
 ---
@@ -33,7 +33,7 @@ Origin: HM · None — DAIU 1.0
 Human origin. AI tools used for supportive work such as grammar suggestions, clean up, resizing or minor edits.
 
 ```text
-Origin: HM · Assist — DAIU 1.0
+Origin: HM · Assist - DAIU 1.0
 ```
 
 ---
@@ -43,7 +43,7 @@ Origin: HM · Assist — DAIU 1.0
 Human origin. AI used to transform or remix existing human created material while the person directs the result.
 
 ```text
-Origin: HM · Remix — DAIU 1.0
+Origin: HM · Remix - DAIU 1.0
 ```
 
 ---
@@ -53,7 +53,7 @@ Origin: HM · Remix — DAIU 1.0
 AI origin. People used AI outputs as source and directed additional transformation, blending or adaptation.
 
 ```text
-Origin: AG · Remix — DAIU 1.0
+Origin: AG · Remix - DAIU 1.0
 ```
 
 ---
@@ -63,7 +63,7 @@ Origin: AG · Remix — DAIU 1.0
 AI origin. AI systems produced most of the content, with human input focused on prompts, curation or light edits.
 
 ```text
-Origin: AG · Major — DAIU 1.0
+Origin: AG · Major - DAIU 1.0
 ```
 
 ---
@@ -80,5 +80,5 @@ Examples include:
 - a short AI generated video clip uploaded without changes  
 
 ```text
-Origin: AG · Full — DAIU 1.0
+Origin: AG · Full - DAIU 1.0
 ```

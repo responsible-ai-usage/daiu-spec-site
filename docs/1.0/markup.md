@@ -10,7 +10,7 @@ DAIU can be represented in both human-facing text and machine-readable data.
 The recommended format is:
 
 ```text
-Origin: HM · Assist — DAIU 1.0
+Origin: HM · Assist - DAIU 1.0
 ```
 
 This can appear in captions, bylines, assignment cover pages and credits.
@@ -21,16 +21,16 @@ For platforms that support HTML or styled content, DAIU tags may be displayed wi
 small badge icon next to the tag text, similar to how Creative Commons licenses are
 shown.
 
-**Preview (HM · Assist — DAIU 1.0)**
+**Preview (HM · Assist - DAIU 1.0)**
 
 <div className="daiu-badge-preview">
   <a href="https://daiu.org/1.0/hm-assist" className="daiu-badge-link">
     <img
       src="/daiu-spec-site/img/badges/daiu-hm-assist.svg"
-      alt="DAIU badge — HM · Assist"
+      alt="DAIU badge - HM · Assist"
       className="daiu-badge-icon"
     />
-    <span>Origin: HM · Assist — DAIU 1.0</span>
+    <span>Origin: HM · Assist - DAIU 1.0</span>
   </a>
 </div>
 
@@ -40,10 +40,10 @@ shown.
 <a href="https://daiu.org/1.0/hm-assist" style="text-decoration:none; color:inherit;">
   <img
     src="https://responsible-ai-usage.github.io/daiu-spec-site/img/badges/daiu-hm-assist.svg"
-    alt="DAIU badge — HM · Assist"
+    alt="DAIU badge - HM · Assist"
     style="height:32px; vertical-align:middle; margin-right:0.5rem;"
   />
-  <span>Origin: HM · Assist — DAIU 1.0</span>
+  <span>Origin: HM · Assist - DAIU 1.0</span>
 </a>
 ```
 
