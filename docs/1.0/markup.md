@@ -23,12 +23,12 @@ shown.
 
 **Preview (HM · Assist — DAIU 1.0)**
 
-<div class="daiu-badge-preview">
-  <a href="https://daiu.org/1.0/hm-assist" style="text-decoration:none; color:inherit;">
+<div className="daiu-badge-preview">
+  <a href="https://daiu.org/1.0/hm-assist" className="daiu-badge-link">
     <img
-      src="/daiu-spec-site/static/img/badges/daiu-hm-assist.svg"
+      src="/daiu-spec-site/img/badges/daiu-hm-assist.svg"
       alt="DAIU badge — HM · Assist"
-      style="height:32px; vertical-align:middle; margin-right:0.5rem;"
+      className="daiu-badge-icon"
     />
     <span>Origin: HM · Assist — DAIU 1.0</span>
   </a>
@@ -39,7 +39,7 @@ shown.
 ```html
 <a href="https://daiu.org/1.0/hm-assist" style="text-decoration:none; color:inherit;">
   <img
-    src="https://responsible-ai-usage.github.io/daiu-spec-site/static/img/badges/daiu-hm-assist.svg"
+    src="https://responsible-ai-usage.github.io/daiu-spec-site/img/badges/daiu-hm-assist.svg"
     alt="DAIU badge — HM · Assist"
     style="height:32px; vertical-align:middle; margin-right:0.5rem;"
   />
