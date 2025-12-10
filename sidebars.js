@@ -5,7 +5,7 @@ const sidebars = {
   specSidebar: [
     {
       type: 'category',
-      label: 'DAIU 1.0',
+      label: 'DAIU 1.0 (draft)',
       collapsed: false,
       items: [
         '1.0/overview',

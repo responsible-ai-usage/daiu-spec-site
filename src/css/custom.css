@@ -52,6 +52,23 @@ main {
   color: #fbfaf3 !important;
 }
 
+/* Change color of the sidebar caret (chevron) for category headers */
+
+.theme-doc-sidebar-item-category-level-1
+  > .menu__list-item-collapsible
+  > .menu__link.menu__link--sublist::after {
+  border-color: #fbfaf3 !important;      /* the caret stroke color */
+  opacity: 1 !important;
+}
+
+/* Hover state */
+.theme-doc-sidebar-item-category-level-1
+  > .menu__list-item-collapsible
+  > .menu__link.menu__link--sublist:hover::after {
+  border-color: #fbfaf3 !important;
+}
+
+
 /* DAIU badges */
 
 .daiu-badge {
@@ -107,7 +124,6 @@ pre.prism-code,
 div[class*="codeBlockContent"],
 code[class*="codeBlockLines"] {
   background-color: #ffffff !important;
-  border: 1px solid #e0e0e0;
 }
 
 /* Also override the border radius (optional) */
