@@ -55,10 +55,10 @@ tag text remain unchanged.
 For web content, DAIU values can be expressed as meta tags:
 
 ```html
-<meta name="daiu:origin"  content="HM">
-<meta name="daiu:level"   content="assist">
+<meta name="daiu:origin" content="HM">
+<meta name="daiu:level" content="assist">
 <meta name="daiu:verification" content="DAIU 1.0">
-<meta name="daiu:description"    content="Color grading and noise reduction with AI tools">
+<meta name="daiu:description" content="Color grading and noise reduction with AI tools">
 ```
 
 ## JSON representation (advisory)
