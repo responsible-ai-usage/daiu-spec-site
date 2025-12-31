@@ -57,8 +57,8 @@ For web content, DAIU values can be expressed as meta tags:
 ```html
 <meta name="daiu:origin"  content="HM">
 <meta name="daiu:level"   content="assist">
-<meta name="daiu:version" content="DAIU 1.0">
-<meta name="daiu:note"    content="Color grading and noise reduction with AI tools">
+<meta name="daiu:verification" content="DAIU 1.0">
+<meta name="daiu:description"    content="Color grading and noise reduction with AI tools">
 ```
 
 ## JSON representation (advisory)
@@ -68,11 +68,11 @@ For web content, DAIU values can be expressed as meta tags:
   "daiu": {
     "origin": "HM",
     "level": "assist",
-    "version": "DAIU 1.0",
-    "note": "Color grading and noise reduction with AI tools"
+    "verification": "DAIU 1.0",
+    "description": "Color grading and noise reduction with AI tools"
   }
 }
 ```
 
 Implementations may adapt these structures as needed for their systems. The key
-requirement is to preserve the origin, level and version values.
+requirement is to preserve the origin, level and verification values.
