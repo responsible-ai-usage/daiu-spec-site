@@ -15,7 +15,7 @@ Feedback and contributions are welcome before finalization.
 If you prefer email, contact: feedback@daiu.org  
 :::
 
-DAIU (Declare AI Usage) is an open, voluntary framework for describing how AI contributed to a specific piece of content.
+DAIU (Disclose AI Usage) is an open, voluntary framework for describing how AI contributed to a specific piece of content.
 
 It is designed to:
 
