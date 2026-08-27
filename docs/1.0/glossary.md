@@ -16,4 +16,4 @@ A description of how much AI shaped the final result.
 A short statement that explains how AI was used.
 
 **DAIU**  
-Declare AI Usage, an open standard for describing how AI contributed to a specific piece of content.
+Disclose AI Usage, an open standard for describing how AI contributed to a specific piece of content.
