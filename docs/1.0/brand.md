@@ -7,7 +7,7 @@ This section summarizes DAIU brand guidance for implementations, documentation a
 
 ## Name and tagline
 
-- Short name: **DAIU (Declare AI Usage)**
+- Short name: **DAIU (Disclose AI Usage)**
 - Full: **Responsible AI Usage Foundation, Inc.**
 - Tagline: **Be Transparent About AI Use**
 
